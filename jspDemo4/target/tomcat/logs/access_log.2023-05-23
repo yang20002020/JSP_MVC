@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [23/May/2023:20:37:57 +0800] "GET /jspDemo4 HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/May/2023:20:37:58 +0800] "GET /jspDemo4/ HTTP/1.1" 200 52 http-bio-8080-exec-2 852
+0:0:0:0:0:0:0:1 - - [23/May/2023:20:38:02 +0800] "GET /jspDemo4/servletDemo4 HTTP/1.1" 302 - http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [23/May/2023:20:38:02 +0800] "GET /jspDemo4/test/demo1.jsp HTTP/1.1" 200 129 http-bio-8080-exec-4 82
