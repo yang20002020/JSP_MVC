@@ -16,7 +16,7 @@ public class JDBCUtils {
 	
 	/**
 	 * 获得连接的方法
-	 * @throws SQLException 
+	 *
 	 */
 	public static Connection getConnection() throws SQLException{
 		return dataSource.getConnection();

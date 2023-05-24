@@ -1,7 +1,10 @@
 package com.fuyu.controller;
+
 import com.fuyu.domain.User;
 import com.fuyu.model.UserModel;
+
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,9 +14,11 @@ import java.io.IOException;
 /*
 
  */
+@WebServlet(urlPatterns ="/LoginServlet")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("进入LoginServlet》》》》》》》》》》》》");
        try {
                // 1.接收数据
                // 处理中文乱码
@@ -41,6 +46,7 @@ public class LoginServlet extends HttpServlet {
                }
        }catch (Exception e){
           e.printStackTrace();
+          throw new RuntimeException(); //使程序终止
        }
 
     }
@@ -48,6 +54,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("doPost>>>>>>>>>>>>>>>>>>>>>");
         doGet(req, resp);
     }
 }
