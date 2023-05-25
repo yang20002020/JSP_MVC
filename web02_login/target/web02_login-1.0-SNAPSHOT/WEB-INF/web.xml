@@ -4,4 +4,16 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <!--配置servlet的名称-->
+    <servlet-name>InitServlet</servlet-name>
+    <!--配置servlet类的全路径-->
+    <servlet-class>com.fuyu.controller.InitServlet</servlet-class>
+    <!--启动时加载-->
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

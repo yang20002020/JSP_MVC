@@ -1,8 +1,6 @@
 package com.fuyu.controller;
-
 import com.fuyu.domain.User;
 import com.fuyu.model.UserModel;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,6 +39,11 @@ public class LoginServlet extends HttpServlet {
                    request.getRequestDispatcher("/login.jsp").forward(request, response);
                } else {
                    // 登录成功
+                   //记录登录成功的人数
+                   Object object= this.getServletContext().getAttribute("count");
+                   int count=Integer.parseInt(object.toString());
+                   count++;
+                   this.getServletContext().setAttribute("count",count);
                    // 重定向到成功页面
                    response.sendRedirect("/web02_login/success.jsp");
                }
