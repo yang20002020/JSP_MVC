@@ -10,6 +10,7 @@
         <module name="jspDemo3" />
         <module name="jspDemo2" />
         <module name="web02_login" />
+        <module name="jspDemo5" />
         <module name="jspDemo4" />
       </profile>
     </annotationProcessing>
