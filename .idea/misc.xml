@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/jspDemo5" />
     <file type="web" url="file://$PROJECT_DIR$/jspDemo6" />
     <file type="web" url="file://$PROJECT_DIR$/jspDemo7" />
+    <file type="web" url="file://$PROJECT_DIR$/jspDemo8" />
     <file type="web" url="file://$PROJECT_DIR$/web02_login" />
   </component>
   <component name="MavenProjectsManager">
@@ -22,6 +23,7 @@
         <option value="$PROJECT_DIR$/jspDemo5/pom.xml" />
         <option value="$PROJECT_DIR$/jspDemo6/pom.xml" />
         <option value="$PROJECT_DIR$/jspDemo7/pom.xml" />
+        <option value="$PROJECT_DIR$/jspDemo8/pom.xml" />
       </list>
     </option>
   </component>
