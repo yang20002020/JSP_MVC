@@ -22,7 +22,7 @@
     //application
     application.setAttribute("name","application作用范围");
 %>
-<h1>当前页面获取值</h1>
+<h1> 当前页面获取值 </h1>
   <%= pageContext.getAttribute("name")%>
   <%= request.getAttribute("name")%>
   <%= session.getAttribute("name")%>
